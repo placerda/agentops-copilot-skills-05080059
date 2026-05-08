@@ -1,12 +1,15 @@
 version: 1
-agent: "http://127.0.0.1:8790/"
-dataset: .agentops/data/support-agent.jsonl
+agent: "https://agentops-http-agent-050811.livelyglacier-b3a4f624.eastus2.azurecontainerapps.io/chat"
+dataset: .agentops/data/support-tools.jsonl
 
 request_field: message
 response_field: text
+tool_calls_field: tool_calls
 
 thresholds:
   coherence: ">=3"
   fluency: ">=3"
-  similarity: ">=3"
-  avg_latency_seconds: "<=2"
+  tool_call_accuracy: ">=0.8"
+  intent_resolution: ">=3"
+  task_adherence: ">=0.6"
+  avg_latency_seconds: "<=30"
