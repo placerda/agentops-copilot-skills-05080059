@@ -1,0 +1,3 @@
+{"input":"Where is my order ORD-12345?","expected":"Order ORD-12345 is in transit and expected to arrive tomorrow."}
+{"input":"Can I return a damaged headset from ORD-77821?","expected":"The customer can start a return for ORD-77821 and choose damaged item as the reason."}
+{"input":"How do I contact a human support agent?","expected":"The assistant can connect the customer to a human support agent for account or order issues."}

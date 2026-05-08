@@ -1,0 +1,12 @@
+version: 1
+agent: "http://127.0.0.1:8790/"
+dataset: .agentops/data/support-agent.jsonl
+
+request_field: message
+response_field: text
+
+thresholds:
+  coherence: ">=3"
+  fluency: ">=3"
+  similarity: ">=3"
+  avg_latency_seconds: "<=2"
